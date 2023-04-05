@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Readex Pro;
+    background-color: white ;
+}
+.container--main{
+    margin: 0 10px;
+    width: 1200px;
+    padding: 0 16px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5em;
+    border-bottom: 1px solid rgb(149, 145, 145);
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.events--lists{
+    display: grid;
+    width: 844px;
+    gap: 3em;
+}
+
+.wrapper--user{
+    border: 1px solid rgb(137, 129, 129);
+    padding: 1em;
+    border-radius: 7px;
+}
+
+.wrapper--event{
+   padding: 1em;
+   border-radius: 5px;
+   border: 1px solid rgb(149, 145, 145);
+}
+
+.user-lists{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.user-avatar{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(204, 204, 204);
+    color:  black;
+    display: block;
+    width: fit-content;
+    margin: 10px;
+}
+.btn--warning{
+    background-color: yellow;
+}
+.btn--primary{
+    background-color: steelblue;
+    color: whitesmoke;
+}
+
+.event-action-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-field--wrapper    {
+    line-height: 30px;
+    font-weight: 400; 
+}
+  
+
+
+.section{
+    margin: 1em 0em;
+}
+
+@media (max-width:1200px){
+    .container--main{
+        width: 100%;
+    }
+}

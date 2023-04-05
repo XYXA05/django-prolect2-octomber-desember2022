@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="section">
+        <img class="user-avatar" src="{{user.avatar.url}}">
+        <h1>{{user.name}}</h1>
+    </div>
+    <div class="section">
+        <p>{{user.bio}}</p>
+    </div>
+    {% if user.instagram %}
+        <div class="section">
+            <a href="{{user.instagram}}" target="_blank">instagram</a>
+        </div>
+    {% endif %}
+    {% if user.telegram_username %}
+        <div class="section">
+            <p>Telegram {{user.telegram_username}}</p>
+        </div>
+    {% endif %}
+    {% if user.youtube %}
+        <div class="section">
+            <a href="{{user.youtube}}" target="_blank">Youtube</a>
+        </div>
+    {% endif %}
+{% endblock content %}
